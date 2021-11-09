@@ -502,7 +502,7 @@ func (id *ULID) Scan(src interface{}) error {
 //    db.Exec("...", invalidZeroValuer(id))
 //
 func (id ULID) Value() (driver.Value, error) {
-	return id.MarshalBinary()
+	return id.String(), nil
 }
 
 // Monotonic returns an entropy source that is guaranteed to yield

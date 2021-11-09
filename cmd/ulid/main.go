@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/oklog/ulid/v2"
 	getopt "github.com/pborman/getopt/v2"
+	"github.com/urunan/ulid/v2"
 )
 
 const (
